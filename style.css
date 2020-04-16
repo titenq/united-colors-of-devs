@@ -72,29 +72,29 @@ footer {
   right: 0px;
 }
 
+textarea {
+  display: none;
+}
+
 .footer {
   color: #fafafa;
 }
 
 .footer span {
-  position: relative;
-  bottom: 15px;
-  font-size: 18px;
+  font-size: 20px;
   padding-left: 50px;
 }
 
-.footer img {
-  background-color: #fafafa;
+.footer a .github {
+  color: #fff;
   padding: 3px;
-  border-radius: 50%;
-  width: 40px;
   margin-left: 100px;
   margin-top: 5px;
   transition: 0.5s;
 }
 
-.footer img:hover {
-  background-color: #ffe0b2;
+.footer a .github:hover {
+  color: #18ffff;
 }
 
 .title-container {
@@ -335,4 +335,10 @@ footer {
   color: #263238;
   font-weight: 500;
   box-shadow: 10px 10px 5px 0px rgba(38, 50, 56, 0.75);
+}
+
+.img-copy {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
 }
