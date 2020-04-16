@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+::selection {
+  background-color: #76ff03;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#33691e, #76ff03);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(#f57f17, #ffff00);
+}
+
+::-webkit-scrollbar-track {
+  background: #263238;
+  box-shadow: inset 0 0 5px #fff;
+}
+
+body {
+  font-family: 'Baloo Bhaina 2', cursive;
+  color: #263238;
+  background: linear-gradient(45deg, #d50000, #f50057, #2196f3, #4dd0e1, #ffff00, #d500f9);
+  background-size: 600% 100%;
+  animation: bg-gradient 15s linear infinite;
+  animation-direction: alternate;
+}
+
+@keyframes bg-gradient {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+
+button {
+  font-family: 'Baloo Bhaina 2', cursive;
+  text-transform: uppercase;
+}
+
+h1 {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 10px 0 40px 10px;
+  line-height: 35px;
+  letter-spacing: 2px;
+}
+
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.title {
+  width: 35%;
+  background-color: #43a047;
+}
+
+.wrapper {
+  margin: 0 auto 25px;
+  text-align: center;
+}
+
+.accordion {
+  cursor: pointer;
+  border: 0;
+  padding: 15px;
+  width: 40%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 8px 1px 5px 0px rgba(38, 50, 56, 0.75);
+  border-radius: 10px;
+  transition: .4s;
+}
+
+.accordion-red {
+  background-color: #ef5350;
+  color: #fff;
+}
+
+.accordion-red.active,
+.accordion-red:hover {
+  background-color: #b71c1c;
+  transform: skewX(5deg);
+}
+
+.accordion-pink {
+  background-color: #ec407a;
+  color: #fff;
+}
+
+.accordion-pink.active,
+.accordion-pink:hover {
+  background-color: #880e4f;
+  transform: skewX(-5deg);
+}
+
+.accordion-purple {
+  background-color: #ab47bc;
+  color: #fff;
+}
+
+.accordion-purple.active,
+.accordion-purple:hover {
+  background-color: #4a148c;
+  transform: skewX(5deg);
+}
+
+.accordion-deep-purple {
+  background-color: #7e57c2;
+  color: #fff;
+}
+
+.accordion-deep-purple.active,
+.accordion-deep-purple:hover {
+  background-color: #311b92;
+  transform: skewX(-5deg);
+}
+
+.accordion-indigo {
+  background-color: #5c6bc0;
+  color: #fff;
+}
+
+.accordion-indigo.active,
+.accordion-indigo:hover {
+  background-color: #1a237e;
+  transform: skewX(5deg);
+}
+
+.accordion-blue {
+  background-color: #42a5f5;
+  color: #fff;
+}
+
+.accordion-blue.active,
+.accordion-blue:hover {
+  background-color: #0d47a1;
+  transform: skewX(-5deg);
+}
+
+.accordion-cyan {
+  background-color: #26c6da;
+  color: #fff;
+}
+
+.accordion-cyan.active,
+.accordion-cyan:hover {
+  background-color: #006064;
+  transform: skewX(5deg);
+}
+
+.accordion-teal {
+  background-color: #26a69a;
+  color: #fff;
+}
+
+.accordion-teal.active,
+.accordion-teal:hover {
+  background-color: #004d40;
+  transform: skewX(-5deg);
+}
+
+.accordion-green {
+  background-color: #66bb6a;
+  color: #fff;
+}
+
+.accordion-green.active,
+.accordion-green:hover {
+  background-color: #1b5e20;
+  transform: skewX(5deg);
+}
+
+.accordion-light-green {
+  background-color: #9ccc65;
+  color: #fff;
+}
+
+.accordion-light-green.active,
+.accordion-light-green:hover {
+  background-color: #33691e;
+  transform: skewX(-5deg);
+}
+
+.accordion-lime {
+  background-color: #d4e157;
+  color: #263238;
+}
+
+.accordion-lime.active,
+.accordion-lime:hover {
+  background-color: #827717;
+  transform: skewX(5deg);
+}
+
+.accordion-yellow {
+  background-color: #ffee58;
+  color: #263238;
+}
+
+.accordion-yellow.active,
+.accordion-yellow:hover {
+  background-color: #f57f17;
+  transform: skewX(-5deg);
+}
+.accordion-orange {
+  background-color: #ffa726;
+  color: #263238;
+}
+
+.accordion-orange.active,
+.accordion-orange:hover {
+  background-color: #e65100;
+  transform: skewX(5deg);
+}
+
+.accordion-brown {
+  background-color: #6d4c41;
+  color: #fff;
+}
+
+.accordion-brown.active,
+.accordion-brown:hover {
+  background-color: #3e2723;
+  transform: skewX(-5deg);
+}
+
+.accordion-grey {
+  background-color: #bdbdbd;
+  color: #fff;
+}
+
+.accordion-grey.active,
+.accordion-grey:hover {
+  background-color: #212121;
+  transform: skewX(5deg);
+}
+
+.accordion-blue-grey {
+  background-color: #78909c;
+  color: #fff;
+}
+
+.accordion-blue-grey.active,
+.accordion-blue-grey:hover {
+  background-color: #263238;
+  transform: skewX(-5deg);
+}
+
+.color {
+  width: 40%;
+  max-height: 0;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0 25px;
+  transition: max-height .2s ease-out;
+}
+
+.red,
+.pink,
+.purple,
+.deep-purple,
+.indigo,
+.blue,
+.cyan,
+.teal,
+.green,
+.light-green,
+.lime,
+.yellow,
+.orange,
+.brown,
+.grey,
+.blue-grey {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50px;
+  color: #263238;
+  font-weight: 500;
+  box-shadow: 10px 10px 5px 0px rgba(38, 50, 56, 0.75);
+}
