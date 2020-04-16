@@ -32,6 +32,7 @@
 body {
   font-family: 'Baloo Bhaina 2', cursive;
   color: #263238;
+  margin-bottom: 70px;
   background: linear-gradient(45deg, #d50000, #f50057, #2196f3, #4dd0e1, #ffff00, #d500f9);
   background-size: 600% 100%;
   animation: bg-gradient 15s linear infinite;
@@ -60,6 +61,42 @@ h1 {
   margin: 10px 0 40px 10px;
   line-height: 35px;
   letter-spacing: 2px;
+}
+
+footer {
+  position: fixed;
+  height: 50px;
+  background-color: #263238;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+.footer {
+  display: inline;
+  color: #fafafa;
+  
+}
+
+.footer span {
+  position: relative;
+  bottom: 15px;
+  font-size: 18px;
+  padding-left: 50px;
+}
+
+.footer img {
+  background-color: #fafafa;
+  padding: 3px;
+  border-radius: 50%;
+  width: 40px;
+  margin-left: 100px;
+  margin-top: 5px;
+  transition: 0.5s;
+}
+
+.footer img:hover {
+  background-color: #ffe0b2;
 }
 
 .title-container {
