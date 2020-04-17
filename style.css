@@ -86,9 +86,12 @@ textarea {
   top: -15px;
   left: -40px;
   width: 80px;
-  background-color: #607d8b;
+  background-color: #424242;
   color: #fff;
   border-radius: 5px;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(255,255,255,0.9);
+  -moz-box-shadow: 1px 1px 2px 1px rgba(255,255,255,0.9);
+  box-shadow: 1px 1px 2px 1px rgba(255,255,255,0.9);
 }
 
 .footer {
