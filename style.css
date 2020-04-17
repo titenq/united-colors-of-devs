@@ -76,6 +76,21 @@ textarea {
   display: none;
 }
 
+.toast-container {
+  position: relative;
+}
+
+.toast {
+  display: none;
+  position: absolute;
+  top: -15px;
+  left: -40px;
+  width: 80px;
+  background-color: #607d8b;
+  color: #fff;
+  border-radius: 5px;
+}
+
 .footer {
   color: #fafafa;
 }

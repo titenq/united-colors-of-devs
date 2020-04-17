@@ -343,6 +343,7 @@ const colors = [
 
 let idsText = [];
 let idsButton = [];
+let idsToast = [];
 
 function renderColors(colorName, colorElement, colorArray, spanColors) {
   for (let i = 0; i < colorArray.length; i++) {
@@ -372,11 +373,15 @@ function renderColors(colorName, colorElement, colorArray, spanColors) {
       <span>${colorArray[i]}</span>
       <textarea id="input-${colorName}-${(i + 1) * 10}">${colorArray[i]}</textarea>
       <i id="copy-${colorName}-${(i + 1) * 10}" class="img-copy fa fa-clipboard" aria-hidden="true" style="color: ${color}"></i>
+      <div class="toast-container">
+        <span id="toast-${colorName}-${(i + 1) * 10}" class="toast">Copiado!</span>
+      </div>
     </div>
     `;
 
     idsText.push(`input-${colorName}-${(i + 1) * 10}`);
     idsButton.push(`copy-${colorName}-${(i + 1) * 10}`);
+    idsToast.push(`toast-${colorName}-${(i + 1) * 10}`);
   }
 }
 
@@ -392,11 +397,18 @@ for (let i = 0; i < colors.length; i++) {
 for (let i = 0; i < idsText.length; i++) {
   let copyText = document.getElementById(`${idsText[i]}`);
   let copyButton = document.getElementById(`${idsButton[i]}`);
+  let copyToast = document.getElementById(`${idsToast[i]}`);
   
-  copyButton.addEventListener("click", function (event) {
-    event.preventDefault();
+  copyButton.addEventListener("click", function () {
     let text = copyText.value;
+
     copyToClipboard(text);
+
+    copyToast.style.display = 'inline-block';
+
+    setTimeout(function () {
+      copyToast.style.display = 'none';
+    }, 1000);
   });
   
   async function copyToClipboard(text) {
