@@ -89,6 +89,7 @@ textarea {
   background-color: #424242;
   color: #fff;
   border-left: 5px solid #aeea00;
+  text-transform: uppercase;
 }
 
 .footer {

@@ -374,7 +374,7 @@ function renderColors(colorName, colorElement, colorArray, spanColors) {
       <textarea id="input-${colorName}-${(i + 1) * 10}">${colorArray[i]}</textarea>
       <i id="copy-${colorName}-${(i + 1) * 10}" class="img-copy fa fa-clipboard" aria-hidden="true" style="color: ${color}"></i>
       <div class="toast-container">
-        <span id="toast-${colorName}-${(i + 1) * 10}" class="toast">Copiado!</span>
+        <span id="toast-${colorName}-${(i + 1) * 10}" class="toast">Copiado</span>
       </div>
     </div>
     `;
